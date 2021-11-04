@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+li {
+    list-style: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 4%;
+    line-height: 10vh;
+}
+header img {
+    width: 30%;
+    max-width: 200px;
+    height: fit-content;
+}
+header button {
+    background-color: #fff;
+    border: none;
+    border-radius: 48px;
+    box-shadow: 0px 3px 14px -4px hsl(208deg 11% 65%);
+    padding: 8px 24px;
+    font-weight: 700;
+}
+.hero-section {
+    background-image: url(images/bg-hero-mobile.svg);
+    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+    min-height: 100vh;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+.hero-text {
+    margin: 5% auto;
+    max-width: 400px;
+    text-align: center;
+}
+.hero-text p {
+    margin: 24px 0;
+    font-size: 18px;
+}
+.hero button{
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 48px;
+    color: white;
+    width: 70%;
+    max-width: 450px;
+    padding: 12px;
+    font-weight: 600;
+}
+.hero img {
+    display: flex;
+    margin: auto;
+    width: 75%;
+    max-width: 600px;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin:24px auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 14px -6px hsl(208deg 11% 65%);
+} 
+.features h2 {
+    margin-bottom: 16px;
+}
+.features p {
+    color: hsl(208, 11%, 55%);
+    max-width: 360px;
+}
+.features img {
+    width: 50%;
+    max-width: 500px;
+    margin: 36px auto;
+}
+.overlay {
+    position: relative;
+    z-index: 100000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: -80px;
+    padding: 20px 0;
+    box-shadow: 0px 3px 14px -6px hsl(208deg 11% 15%);
+    background-color: white;
+    border-radius: 12px;
+}
+.overlay button {
+    margin: 18px auto;
+    width: 80%;
+    max-width: 300px;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 48px;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+}
+body footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+main footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 130px 24px 24px 24px;
+}
+.footer-column div {
+    display: flex;
+    margin-bottom: 16px;
+}
+.footer-column div img {
+    height: fit-content;
+    padding: 4px 12px 2px 0;
+}
+footer ul {
+    margin-bottom: 12px;
+}
+footer ul li {
+    line-height: 32px;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.socials img {
+    width: 18px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    padding: 4px;
+    margin: 4px;
+}
+.copyright {
+    text-align: center;
+}
+@media screen and (min-width: 780px) {
+    header {
+        padding: 45px 35px;
+        line-height: 10vh;
+    }
+    .hero-section {
+        background-image: url(images/bg-hero-desktop.svg);
+    }
+    .hero {
+        flex-direction: row;
+    }
+    .hero img {
+        min-width: 400px;
+    }
+    .hero-text {
+        margin: 10%;
+        max-width: 400px;
+        text-align: left;
+    }
+    .features {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        text-align: left;
+    }
+    .features img {
+        width: 40%;
+        max-width: 360px;
+        margin: 36px auto;
+    }
+    .feature-section div:nth-child(1), .feature-section div:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+    .sitemap {
+        display: grid;
+        grid-template-columns: 30% 25% 25% 20%;
+        margin: auto;
+        padding: 48px;
+        padding-bottom: 0;
+    }
+    .footer-column:nth-child(2) {
+        margin-left: 48px;
+    }
+    .socials {
+        align-items: flex-start;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .socials img {
+        border: 1px solid white;
+    }
+    .copyright {
+        text-align: right;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
